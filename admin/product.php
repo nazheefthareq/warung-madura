@@ -27,7 +27,7 @@
     <input type="text" name="name" placeholder="Nama Produk">
     <input type="number" name="price" placeholder="Harga">
     <input type="number" name="stock" placeholder="Stok">
-    <input type="text" name="img" placeholder="Link Gambar">
+    <input type="text" name="img" placeholder="../upload/namafile.format">
     <select name="category">
         <?php while($cat = mysqli_fetch_assoc($categories)): ?>
             <option value="<?= $cat['categoryID'] ?>"><?= $cat['categoryNAME'] ?></option>
